@@ -1,0 +1,29 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "to-do-list-demo-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/toDoListDemo/ToDoListDemoWebPart.js",
+          "manifest": "./src/webparts/toDoListDemo/ToDoListDemoWebPart.manifest.json"
+        }
+      ]
+    },
+    "todohello-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/todohello/TodohelloWebPart.js",
+          "manifest": "./src/webparts/todohello/TodohelloWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "ToDoListWebPartStrings": "lib/webparts/toDoList/loc/{locale}.js",
+    "ToDoListDemoWebPartStrings": "lib/webparts/toDoListDemo/loc/{locale}.js",
+    "TodotestWebPartStrings": "lib/webparts/todotest/loc/{locale}.js",
+    "TodohelloWebPartStrings": "lib/webparts/todohello/loc/{locale}.js"
+  }
+}
